@@ -5,20 +5,11 @@ on:
     branches: ["main"]
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Setup Node.js
@@ -29,8 +20,12 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build the project
+      - name: Build
         run: npm run build
 
-      - name: Deploy to GitHub Pages
-        run: npm run deploy
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages          # The branch the action should deploy to.
+          folder: dist              # The folder the action should deploy.
+          clean: true               # Clears the branch before deploying
