@@ -15,18 +15,18 @@ export default function Page() {
       "No",
       "Are you sure?",
       "What if I asked really nicely?",
-      "Pretty please",
-      "With a chocolate rice cake on top",
-      "What about a matcha frostie",
-      "PLEASE POOKIE",
+      "Pleeeeeeeeeeeeaseeeeeeee",
+      "I will buy you chipsssssss 😉🥺",
+      "What about a chickwizz",
+      "Please babyyyyyyyy",
       "But :*(",
-      "I am going to die",
-      "Yep im dead",
-      "ok ur talking to nathan's ghost",
-      "please babe",
+      "I am going to die 0",
+      "Yes, that's it i'm dead",
+      "ok ur talking to Adio's ghost",
+      "please baby",
       ":((((",
-      "PRETTY PLEASE",
-      "Estoy muerto",
+      "Mummmmmmyyyy nawwwwwww",
+      "I have fainted",
       "No :(",
     ];
 
@@ -38,7 +38,7 @@ export default function Page() {
       {yesPressed ? (
         <>
           <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" />
-          <div className="my-4 text-4xl font-bold">WOOOOOO!!! I love you pookie!! ;))</div>
+          <div className="my-4 text-4xl font-bold">YAYYYYYYYYYYY!!! I love you B.!! ;))</div>
         </>
       ) : (
         <>
@@ -46,7 +46,7 @@ export default function Page() {
             className="h-[200px]"
             src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif"
           />
-          <h1 className="my-4 text-4xl">Will you be my Valentine?</h1>
+          <h1 className="my-4 text-4xl">Will you be my Valentine, My Little Smirnoff?</h1>
           <div className="flex items-center">
             <button
               className={`mr-4 rounded bg-green-500 px-4 py-2 font-bold text-white hover:bg-green-700`}
