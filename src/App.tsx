@@ -10,6 +10,17 @@ export default function Page() {
     setNoCount(noCount + 1);
   };
 
+  const handleYesClick = () => {
+    setYesPressed(true);
+
+    // WhatsApp notification
+    const phoneNumber = "2348148770496"; // YOUR number
+    const text = encodeURIComponent(
+      "I said YES to being your Valentine ❤️"
+    );
+    window.open(`https://wa.me/${phoneNumber}?text=${text}`, "_blank");
+  };
+
   const getNoButtonText = () => {
     const phrases = [
       "No",
@@ -17,7 +28,7 @@ export default function Page() {
       "What if I asked really nicely?",
       "Pleeeeeeeeeeeeaseeeeeeee",
       "I will buy you chipsssssss 😉🥺",
-      "What about a chickwizz",
+      "What about chickwizz?",
       "Please babyyyyyyyy",
       "But :*(",
       "I am going to die 0",
@@ -38,7 +49,13 @@ export default function Page() {
       {yesPressed ? (
         <>
           <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" />
-          <div className="my-4 text-4xl font-bold">YAYYYYYYYYYYY!!! I love you B.!! ;))</div>
+          <div className="my-4 text-4xl font-bold text-center">
+            Rebecca ❤️ <br />
+            You just made me the happiest man alive! <br />
+            Thank you for being my Valentine. <br />
+            I love you endlessly 💕 <br /><br />
+            — Adeyemi 💌
+          </div>
         </>
       ) : (
         <>
@@ -46,18 +63,20 @@ export default function Page() {
             className="h-[200px]"
             src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif"
           />
-          <h1 className="my-4 text-4xl">Will you be my Valentine, My Little Smirnoff?</h1>
+          <h1 className="my-4 text-4xl text-center">
+            Will you be my Valentine, My Little Smirnoff?
+          </h1>
           <div className="flex items-center">
             <button
               className={`mr-4 rounded bg-green-500 px-4 py-2 font-bold text-white hover:bg-green-700`}
               style={{ fontSize: yesButtonSize }}
-              onClick={() => setYesPressed(true)}
+              onClick={handleYesClick} // updated handler
             >
-              Yes
+              Yes 💖
             </button>
             <button
               onClick={handleNoClick}
-              className=" rounded bg-red-500 px-4 py-2 font-bold text-white hover:bg-red-700"
+              className="rounded bg-red-500 px-4 py-2 font-bold text-white hover:bg-red-700"
             >
               {noCount === 0 ? "No" : getNoButtonText()}
             </button>
