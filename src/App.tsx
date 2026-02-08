@@ -50,11 +50,11 @@ export default function Page() {
         <>
           <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" />
           <div className="my-4 text-4xl font-bold text-center">
-            Rebecca ❤️ <br />
-            You just made me the happiest man alive! <br />
+            My Melanin Queen!!!!! ❤️ <br />
+            Yessssss!!!! <br />
             Thank you for being my Valentine. <br />
             I love you endlessly 💕 <br /><br />
-            — Adeyemi 💌
+            — Love, Shakiru. 💌
           </div>
         </>
       ) : (
