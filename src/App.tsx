@@ -16,7 +16,7 @@ export default function Page() {
     // WhatsApp notification
     const phoneNumber = "2348148770496"; // YOUR number
     const text = encodeURIComponent(
-      "I said YES to being your Valentine ❤️"
+      "I say "YES" to being your Valentine, my Adio ❤️"
     );
     window.open(`https://wa.me/${phoneNumber}?text=${text}`, "_blank");
   };
