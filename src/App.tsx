@@ -28,7 +28,7 @@ export default function Page() {
       "What if I asked really nicely?",
       "Pleeeeeeeeeeeeaseeeeeeee",
       "I will buy you chipsssssss 😉🥺",
-      "What about chickwizz?",
+      "What about turkey?",
       "Please babyyyyyyyy",
       "But :*(",
       "I am going to die o",
