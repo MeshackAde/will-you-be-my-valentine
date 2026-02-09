@@ -14,10 +14,11 @@ export default function Page() {
     setYesPressed(true);
 
     // WhatsApp notification
-    const phoneNumber = "2348148770496"; // YOUR number
+    const phoneNumber = "2348148770496";
     const text = encodeURIComponent(
-      "I say "YES" to being your Valentine, my Adio ❤️"
+      'I say "YES" to being your Valentine, my Adio ❤️'
     );
+
     window.open(`https://wa.me/${phoneNumber}?text=${text}`, "_blank");
   };
 
@@ -68,9 +69,9 @@ export default function Page() {
           </h1>
           <div className="flex items-center">
             <button
-              className={`mr-4 rounded bg-green-500 px-4 py-2 font-bold text-white hover:bg-green-700`}
+              className="mr-4 rounded bg-green-500 px-4 py-2 font-bold text-white hover:bg-green-700"
               style={{ fontSize: yesButtonSize }}
-              onClick={handleYesClick} // updated handler
+              onClick={handleYesClick}
             >
               Yes 💖
             </button>
